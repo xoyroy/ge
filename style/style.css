@@ -143,6 +143,23 @@ main > section{
    
 }
 
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100;
+    margin-top: -100;
+}
+
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.featured-architect img{
+    width: 100%;
+}
+
 /*some facts related styles */
 .facts-container{
     display: grid;
@@ -193,13 +210,26 @@ main > section{
     filter:grayscale(100%) ;
 }
 
+/* footer box style */
 
+.footer-box{
+    background-color: #FF900E;
+    color: aliceblue;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 
 /*responsive media query */
 
 @media screen  and (max-width:576px){
-    .navbar, .nav-links{
+    .navbar,
+    .teams,
+    .features,
+     .nav-links{
         flex-direction: column;
     }
 
@@ -218,11 +248,16 @@ main > section{
     .our-features{
         margin-left: 20px;
     }
+
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px ;
+    }
 }
 
 /*medium size device */
     @media screen and (min-width:576px) and (max-width:992px){
-        .teams{
+        .teams, .features{
             flex-direction: column;
         }
 
@@ -235,4 +270,9 @@ main > section{
             gap:50px;
             justify-items: center;
         }
+        #experience-badge {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
     }
